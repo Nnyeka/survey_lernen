@@ -5,7 +5,8 @@ module.exports = {
     mongoURI: process.env.MONGO_URI,
     cookieKey: process.env.COOKIE_KEY,
     paystackPublicKey: process.env.PAYSTACK_PUBLIC_KEY,
-    paystackSecretKey: process.env.PAYSTACK_SECRET_KEY
+    paystackSecretKey: process.env.PAYSTACK_SECRET_KEY,
+    sendGridKey: process.env.SEND_GRID_KEY
 };
 
 

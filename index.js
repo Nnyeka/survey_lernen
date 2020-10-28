@@ -4,6 +4,7 @@ const cookieSession = require('cookie-session')
 const passport = require('passport')
 const keys = require('./config/keys')
 require('./models/User');
+require('./models/Survey')
 require('./services/passport')
 const bodyParser = require('body-parser')
 
@@ -26,6 +27,7 @@ app.use(bodyParser.json())
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app)
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
@@ -41,8 +43,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT);
 
 
-
-// dev client id: 
-// seveyedbase password: 
-
-//  mongodb+srv://surveydbase:bB895JbpgQnNbvhL@surveyd-dev.2g1al.mongodb.net/suveryeddb?retryWrites=true&w=majority

@@ -25,6 +25,7 @@
     "nodemon": "^2.0.5",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
-    "paystack-node": "^0.2.5"
+    "paystack-node": "^0.2.5",
+    "sendgrid": "^5.2.3"
   }
 }
